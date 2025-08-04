@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  This HTML document demonstrates the use of semantic HTML5,
+  accessibility best practices, and basic on-page SEO.
+-->
+<html lang="en">
+
+<head>
+    <!-- Metadata for SEO and browser behavior -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Dev Blog - Semantic HTML, SEO & Accessibility</title>
+    <meta name="description" content="A simple blog page demonstrating foundational concepts of HTML5 semantic structure, web accessibility, and on-page SEO best practices.">
+    <meta name="keywords" content="HTML5, semantic, accessibility, SEO, web development, web standards, blog">
+</head>
+
+<body>
+    <!--
+      The <header> element represents introductory content, typically containing
+      the site's main heading and navigation. It's a key semantic landmark.
+    -->
+    <header>
+        <!-- The <h1> tag is the most important heading, used for the main title of the page.
+             There should only be one <h1> per page. -->
+        <h1>The Modern Web Dev Blog</h1>
+
+        <!-- The <nav> element defines a block of navigation links. This is a critical
+             semantic landmark for screen readers and search engines. -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Latest Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+      The <main> element contains the main content of the document.
+      This is a key accessibility landmark that helps users of screen readers
+      skip directly to the primary content. There should be only one <main> per page.
+    -->
+    <main>
+        <!--
+          The <section> element groups related content, and it should typically
+          have a heading to describe its purpose. This creates a logical
+          structure for both users and search engines.
+        -->
+        <section id="articles">
+            <!-- The <h2> tag represents the subheading for a major section. -->
+            <h2>Latest Articles</h2>
+
+            <!--
+              The <article> element represents a self-contained composition in a
+              document, such as a blog post or news item. Each article can
+              have its own heading hierarchy.
+            -->
+            <article>
+                <!-- The <h3> tag is a subheading for a specific article. -->
+                <h3>The Power of Semantic HTML5</h3>
+                <p>
+                    Using semantic tags like `header`, `nav`, `main`, `article`, and `footer`
+                    makes your code more readable for humans and more understandable for search
+                    engine crawlers and assistive technologies. It's a foundational
+                    practice for building robust and accessible websites.
+                </p>
+                <p>
+                    This is a follow-up paragraph explaining more about why semantic tags
+                    are important for SEO and accessibility. They provide context and structure
+                    that non-semantic tags like `div` simply can't.
+                </p>
+            </article>
+
+            <article>
+                <h3>Why Accessibility Matters</h3>
+                <p>
+                    Creating an accessible website isn't just a legal requirement; it's a moral one.
+                    By using attributes like `aria-label`, ensuring proper heading hierarchy,
+                    and providing alternative text for images, we ensure our content is
+                    available to everyone, regardless of ability.
+                </p>
+                <p>
+                    An accessible site often has a better user experience for all users,
+                    and many accessibility best practices also overlap with good SEO practices.
+                </p>
+            </article>
+        </section>
+
+        <!--
+          The <aside> element contains content that is related to the main
+          content but can be considered separate or tangential (e.g., a sidebar).
+        -->
+        <aside aria-labelledby="related-links-heading">
+            <h2 id="related-links-heading">Related Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Semantic_elements">MDN: Semantic HTML</a></li>
+                <li><a href="https://web.dev/learn/accessibility/">Google: Learn Accessibility</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!--
+      The <footer> element contains content at the bottom of a document or a section,
+      such as copyright information, authorship, or contact details.
+    -->
+    <footer id="contact">
+        <!-- The <h2> here is used for the footer section. -->
+        <h2>Contact & Information</h2>
+        <p>
+            You can reach us via email at
+            <a href="gakuomuriuki99@gmail.com">info@example.com</a>.
+        </p>
+        <p>&copy; 2025 Modern Web Dev Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
